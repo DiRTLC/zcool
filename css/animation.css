@@ -1,0 +1,16 @@
+.slideUp{
+    animation: slideUp 0.8s linear;
+}
+.up-down{
+    animation: up-down 0.8s linear;
+}
+
+
+@keyframes slideUp {
+    from {transform: translateY(800px);}
+    to {transform: translateY(0);}
+}
+@keyframes up-down {
+    from {transform: translateY(-800px);}
+    to {transform: translateY(0)}
+}

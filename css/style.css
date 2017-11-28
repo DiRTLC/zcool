@@ -1,0 +1,377 @@
+html, body {
+    margin: 0;
+    padding: 0
+}
+.wrap{
+    width: 1920px;
+    height: 100%
+}
+.header{
+    width: 100%;
+    height: 60px;
+    background-color: #333333;
+    position: fixed;
+    top: 0;
+    left: 0
+}
+.hide{
+    display: none;
+}
+.content{
+    width: 980px;
+    height: 60px;
+    margin: auto;
+
+}
+.logo{
+    float: left;
+    width: 200px;
+    height: 100%;
+    margin: 0;
+    text-align: center;
+}
+.logo>img{
+    display: block;
+    margin: 16px 0 0 0;
+}
+.nav{
+    width: 450px;
+    float: right;
+    list-style: none;
+}
+.nav>li{
+    width: 90px;
+    height: 100%;
+    float: left;
+    font-size: 14px;
+    text-align: center;
+    line-height: 60px;
+}
+.nav a{
+    display: block;
+    text-decoration: none;
+    color: #fff
+}
+.nav>.active, .nav>.active>a, .nav a:hover{
+    background-color: #FFCC00;
+    color: #000
+}
+
+
+.pageWrap{
+    position: absolute;
+    top: 60px;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+.pageWrap>.point{
+    position: fixed;
+    top:487px;
+    right:17px;
+    list-style: none;
+    width:12px;
+    height: 110px;
+    z-index: 10;
+}
+.pageWrap>.point>li{
+    box-sizing: border-box;
+    margin-top: 10px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.pageWrap>.point>.active{
+    background-color: black;
+}
+.page{
+    width: 100%;
+    height: 914px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.innerWrap{
+    width: 100%;
+    height: 6398px;
+    position: absolute;
+    top:0;
+    /*top: -914px;*/
+    /*overflow: hidden;*/
+    transition: all 0.5s
+}
+
+
+/*第一页*/
+.firstPage{
+
+    background-image: url("../img/s1.jpg");
+    /*margin-top: -2742px;*/
+}
+.firstPage>.img{
+    position:relative;
+    width:1089px;
+    height: 860px;
+    margin: auto;
+
+}
+.firstPage img{
+    display: block;
+    position: absolute;
+    top:197px;
+}
+
+
+/*第二页*/
+.secondPage{
+    /*background-color: #333333;*/
+    position: relative;
+    background-image: url("../img/s2.jpg");
+}
+.secondPage>.pics{
+    position: absolute;
+    top:208px;
+    left:330px;
+
+    width: 837px;
+    justify-content: space-between;
+}
+.secondPage>.pics>div{
+    float: left;
+    margin-right: 20px;
+}
+.secondPage>.pics>div>p{
+    margin: 20px 0;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+}
+.secondPage>.pics>div>a{
+    display: block;
+    margin:auto;
+    width:98px;
+    height:30px;
+    background-image: url("../img/buy.jpg");
+    background-position: 50% 50%;
+}
+.secondPage>.sc2{
+    position: absolute;
+    top:246px;
+    left:1111px;
+}
+.secondPage>.text{
+    position:absolute;
+    top:230px;
+    left:1415px;
+    width: 161px;
+    text-align: right;
+    padding-right: 15px;
+    border-right: 2px solid black;
+}
+.secondPage>.text>h1{
+    font-size: 34px;
+    color: #333;
+    font-weight: 100;
+}
+.secondPage>.text>p{
+    width: 161px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+.secondPage>.text>a{
+    text-decoration: none;
+    color: #333;
+}
+
+
+/*第三页*/
+.thirdPage{
+    position: relative;
+    background-image: url("../img/s3.jpg");
+}
+.thirdPage>.pics{
+    position: absolute;
+    top:208px;
+    left:325px;
+    width: 837px;
+    justify-content: space-between;
+    z-index: 1;
+}
+.thirdPage>.pics>div{
+    float: left;
+    margin-right: 20px;
+}
+.thirdPage>.pics>div>p{
+    margin: 20px 0;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+}
+.thirdPage>.pics>div>a{
+    display: block;
+    margin:auto;
+    width:98px;
+    height:30px;
+    background-image: url("../img/buy.jpg");
+    background-position: 50% 50%;
+}
+.thirdPage>.sc3{
+    position: absolute;
+    top:158px;
+    left:875px;
+}
+.thirdPage>.text{
+    position:absolute;
+    top:230px;
+    left:1415px;
+    width: 161px;
+    text-align: right;
+    padding-right: 15px;
+    border-right: 2px solid black;
+}
+.thirdPage>.text>h1{
+    font-size: 34px;
+    color: #333;
+    font-weight: 100;
+}
+.thirdPage>.text>p{
+    width: 161px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+.thirdPage>.text>a{
+    text-decoration: none;
+    color: #333;
+}
+
+
+/*第四页*/
+.fourthPage{
+    position: relative;
+    background-image: url("../img/s4.jpg");
+}
+.fourthPage>.pics{
+    position: absolute;
+    top:208px;
+    left:315px;
+    width: 990px;
+    justify-content: space-between;
+    z-index: 1;
+}
+.fourthPage>.pics>div{
+    float: left;
+    margin-right: 20px;
+}
+.fourthPage>.pics>div>p{
+    margin: 20px 0;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+}
+.fourthPage>.pics>div>a{
+    display: block;
+    margin:auto;
+    width:98px;
+    height:30px;
+    background-image: url("../img/buy.jpg");
+    background-position: 50% 50%;
+}
+.fourthPage>.sc4{
+    position: absolute;
+    top:379px;
+    left:943px;
+}
+.fourthPage>.text{
+    position:absolute;
+    top:230px;
+    left:1415px;
+    width: 161px;
+    text-align: right;
+    padding-right: 15px;
+    border-right: 2px solid black;
+}
+.fourthPage>.text>h1{
+    font-size: 34px;
+    color: #333;
+    font-weight: 100;
+}
+.fourthPage>.text>p{
+    width: 161px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+.fourthPage>.text>a{
+    text-decoration: none;
+    color: #333;
+}
+
+
+/*第五页*/
+.fifthPage{
+    position: relative;
+    background-image: url("../img/s4.jpg");
+}
+.fifthPage>.pics{
+    position: absolute;
+    top:208px;
+    left:325px;
+    width: 889px;
+    justify-content: space-between;
+    z-index: 1;
+}
+.fifthPage>.pics>div{
+    float: left;
+    margin-right: 20px;
+}
+.fifthPage>.pics>div>p{
+    margin: 20px 0;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+}
+.fifthPage>.pics>div>a{
+    display: block;
+    margin:auto;
+    width:98px;
+    height:30px;
+    background-image: url("../img/buy.jpg");
+    background-position: 50% 50%;
+}
+.fifthPage>.sc5{
+    position: absolute;
+    top:348px;
+    left:859px;
+}
+.fifthPage>.text{
+    position:absolute;
+    top:230px;
+    left:1415px;
+    width: 170px;
+    text-align: right;
+    padding-right: 15px;
+    border-right: 2px solid black;
+}
+.fifthPage>.text>h1{
+    font-size: 34px;
+    color: #333;
+    font-weight: 100;
+}
+.fifthPage>.text>p{
+    width: 161px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+.fifthPage>.text>a{
+    text-decoration: none;
+    color: #333;
+}
